@@ -24,6 +24,11 @@ public class Location {
         this.zipcode = zipcode;
         this.timezone = timezone;
     }
+
+    public Location(String city, String country, String zipcode, String timezone) {
+    }
+
+
     //Getters for Location.java
     public long getLocation_id(){ return location_id; }
     public String getCity(){ return city; }
