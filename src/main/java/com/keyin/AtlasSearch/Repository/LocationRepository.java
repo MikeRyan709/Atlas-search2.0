@@ -10,5 +10,5 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "location", path = "location")
 public interface LocationRepository extends PagingAndSortingRepository<Location, Long> {
 
-    List<Location> findByZipcode(@Param("Zipcode")String Zipcode);
+     List<Location> findByZip(@Param("zipcode") String zipcode);
 }
