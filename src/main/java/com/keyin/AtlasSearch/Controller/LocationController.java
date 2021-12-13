@@ -6,7 +6,10 @@ import com.keyin.AtlasSearch.Repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +18,11 @@ import java.util.Optional;
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/api")
+
+
 public class LocationController {
 
-    @Autowired
+    @Autowired(required = true)
     LocationRepository locationRepository;
 
     //Get method for location
@@ -29,7 +34,7 @@ public class LocationController {
             if (Location == null)
                 locationRepository.findAll().forEach(location::add);
             else
-                location.addAll(locationRepository.findByZip(Location));
+                location.addAll(locationRepository.findByCountry(Location));
 
             if (location.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
