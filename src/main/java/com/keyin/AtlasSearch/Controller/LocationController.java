@@ -29,7 +29,7 @@ public class LocationController {
     @GetMapping("/location")
     public ResponseEntity<List<Location>> getAllLocations(@RequestParam(required = false) String Location) {
         try {
-            List<Location> location = new ArrayList<Location>();
+            List<Location> location = new ArrayList<>();
 
             if (Location == null)
                 locationRepository.findAll().forEach(location::add);
