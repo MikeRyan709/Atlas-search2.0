@@ -17,6 +17,9 @@ public class Location {
     private String timezone;
 
 
+    public Location() {
+    }
+
     public Location(long location_id, String city, String country, String zipcode, String timezone) {
         this.location_id = location_id;
         this.city = city;
