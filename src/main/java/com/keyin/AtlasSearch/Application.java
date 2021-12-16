@@ -1,7 +1,7 @@
 package com.keyin.AtlasSearch;
 
 
-import com.keyin.AtlasSearch.Controller.AuthenticationController;
+//import com.keyin.AtlasSearch.Controller.AuthenticationController;
 import com.keyin.AtlasSearch.Controller.LocationController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
