@@ -1,4 +1,4 @@
-package com.keyin.AtlasSearch;
+//package com.keyin.AtlasSearch;
 
 //import org.springframework.boot.builder.SpringApplicationBuilder;
 //import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

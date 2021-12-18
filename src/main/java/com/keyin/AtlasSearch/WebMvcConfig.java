@@ -1,4 +1,4 @@
-package com.keyin.AtlasSearch;
+//package com.keyin.AtlasSearch;
 
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
