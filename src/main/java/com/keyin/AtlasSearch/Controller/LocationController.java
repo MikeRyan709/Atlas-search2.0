@@ -31,7 +31,7 @@ public class LocationController {
             if (Location == null)
                 locationRepository.findAll().forEach(location::add);
             else
-                location.addAll(locationRepository.findByCountry(Location));
+                location.addAll(LocationRepository.findByCountry(Location));
 
             if (location.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);

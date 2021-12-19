@@ -1,14 +1,11 @@
 package com.keyin.AtlasSearch;
 
 
-//import com.keyin.AtlasSearch.Controller.AuthenticationController;
-import com.keyin.AtlasSearch.Controller.LocationController;
+//import com.keyin.AtlasSearch.Controller.MainController;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.PropertySource;
 
-@PropertySource({"classpath:application.properties"})
 @SpringBootApplication()
 public class Application {
 
